@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E84FD59229D6A4E005D4901 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD58229D6A4E005D4901 /* MyCollectionViewCell.swift */; };
+		1E84FD5B229D6E03005D4901 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD5A229D6E03005D4901 /* viewModel.swift */; };
+		1E84FD5D229D6F09005D4901 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD5C229D6F09005D4901 /* Network.swift */; };
+		1E84FD5F229D6F1D005D4901 /* networkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD5E229D6F1D005D4901 /* networkProtocol.swift */; };
 		683707C71C78EE2C2537831A /* Pods_RxSwift_MVVM_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2477E4EFE84EAADEC050A8EF /* Pods_RxSwift_MVVM_Currency.framework */; };
 		BAA7EEE7229D6386002B6539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7EEE6229D6386002B6539 /* AppDelegate.swift */; };
 		BAA7EEE9229D6386002B6539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7EEE8229D6386002B6539 /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E84FD58229D6A4E005D4901 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E84FD5A229D6E03005D4901 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
+		1E84FD5C229D6F09005D4901 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1E84FD5E229D6F1D005D4901 /* networkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkProtocol.swift; sourceTree = "<group>"; };
 		2477E4EFE84EAADEC050A8EF /* Pods_RxSwift_MVVM_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_MVVM_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7002E2BE488871CF03015451 /* Pods-RxSwift MVVM Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift MVVM Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift MVVM Currency/Pods-RxSwift MVVM Currency.release.xcconfig"; sourceTree = "<group>"; };
 		BAA7EEE3229D6386002B6539 /* RxSwift MVVM Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift MVVM Currency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +58,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1E84FD57229D6A07005D4901 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				BAA7EEE8229D6386002B6539 /* ViewController.swift */,
+				1E84FD58229D6A4E005D4901 /* MyCollectionViewCell.swift */,
+				1E84FD5A229D6E03005D4901 /* viewModel.swift */,
+				1E84FD60229D6F23005D4901 /* service */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		1E84FD60229D6F23005D4901 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				1E84FD5C229D6F09005D4901 /* Network.swift */,
+				1E84FD5E229D6F1D005D4901 /* networkProtocol.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
 		3712A9095181D00982D41F1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BAA7EEE6229D6386002B6539 /* AppDelegate.swift */,
-				BAA7EEE8229D6386002B6539 /* ViewController.swift */,
+				1E84FD57229D6A07005D4901 /* screens */,
 				BAA7EEEA229D6386002B6539 /* Main.storyboard */,
 				BAA7EEF0229D6426002B6539 /* Assets.xcassets */,
 				BAA7EEF2229D6426002B6539 /* LaunchScreen.storyboard */,
@@ -211,6 +239,10 @@
 			files = (
 				BAA7EEE9229D6386002B6539 /* ViewController.swift in Sources */,
 				BAA7EEE7229D6386002B6539 /* AppDelegate.swift in Sources */,
+				1E84FD5F229D6F1D005D4901 /* networkProtocol.swift in Sources */,
+				1E84FD5D229D6F09005D4901 /* Network.swift in Sources */,
+				1E84FD59229D6A4E005D4901 /* MyCollectionViewCell.swift in Sources */,
+				1E84FD5B229D6E03005D4901 /* viewModel.swift in Sources */,
 				BAA7EEEF229D6386002B6539 /* RxSwift_MVVM_Currency.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "RxSwift MVVM Currency/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "eg.gov.iti.RxSwift-MVVM-Currency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -373,7 +408,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "RxSwift MVVM Currency/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "eg.gov.iti.RxSwift-MVVM-Currency";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
