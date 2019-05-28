@@ -22,10 +22,10 @@ class viewModel{
     init()
     {
         dataObservable = dataSubject.asObservable()
-        self.useObservable()
+        self.bservableCalling()
     }
     
-    func useObservable()
+    func bservableCalling()
     {
         networkObj.getObservableResponse(apiUrl: jsonURL).subscribe(onNext: { [weak self] in
             if let dict=$0.1 as?[String:Any]{
