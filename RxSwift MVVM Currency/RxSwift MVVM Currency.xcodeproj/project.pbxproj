@@ -11,6 +11,8 @@
 		1E84FD5B229D6E03005D4901 /* viewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD5A229D6E03005D4901 /* viewModel.swift */; };
 		1E84FD5D229D6F09005D4901 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD5C229D6F09005D4901 /* Network.swift */; };
 		1E84FD5F229D6F1D005D4901 /* networkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E84FD5E229D6F1D005D4901 /* networkProtocol.swift */; };
+		1EEE4BB1229E7D2100318F97 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4BB0229E7D2100318F97 /* APIClient.swift */; };
+		1EEE4BB3229E856400318F97 /* myViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE4BB2229E856400318F97 /* myViewModel.swift */; };
 		683707C71C78EE2C2537831A /* Pods_RxSwift_MVVM_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2477E4EFE84EAADEC050A8EF /* Pods_RxSwift_MVVM_Currency.framework */; };
 		BAA7EEE7229D6386002B6539 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7EEE6229D6386002B6539 /* AppDelegate.swift */; };
 		BAA7EEE9229D6386002B6539 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA7EEE8229D6386002B6539 /* ViewController.swift */; };
@@ -25,6 +27,8 @@
 		1E84FD5A229D6E03005D4901 /* viewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewModel.swift; sourceTree = "<group>"; };
 		1E84FD5C229D6F09005D4901 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1E84FD5E229D6F1D005D4901 /* networkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkProtocol.swift; sourceTree = "<group>"; };
+		1EEE4BB0229E7D2100318F97 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		1EEE4BB2229E856400318F97 /* myViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myViewModel.swift; sourceTree = "<group>"; };
 		2477E4EFE84EAADEC050A8EF /* Pods_RxSwift_MVVM_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_MVVM_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7002E2BE488871CF03015451 /* Pods-RxSwift MVVM Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift MVVM Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift MVVM Currency/Pods-RxSwift MVVM Currency.release.xcconfig"; sourceTree = "<group>"; };
 		BAA7EEE3229D6386002B6539 /* RxSwift MVVM Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift MVVM Currency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,9 +65,8 @@
 		1E84FD57229D6A07005D4901 /* screens */ = {
 			isa = PBXGroup;
 			children = (
-				BAA7EEE8229D6386002B6539 /* ViewController.swift */,
-				1E84FD58229D6A4E005D4901 /* MyCollectionViewCell.swift */,
-				1E84FD5A229D6E03005D4901 /* viewModel.swift */,
+				1EEE4BB4229E891B00318F97 /* dynamic API Client */,
+				1EEE4BB5229E899E00318F97 /* homeScreen */,
 				1E84FD60229D6F23005D4901 /* service */,
 			);
 			path = screens;
@@ -76,6 +79,25 @@
 				1E84FD5E229D6F1D005D4901 /* networkProtocol.swift */,
 			);
 			path = service;
+			sourceTree = "<group>";
+		};
+		1EEE4BB4229E891B00318F97 /* dynamic API Client */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE4BB0229E7D2100318F97 /* APIClient.swift */,
+				1EEE4BB2229E856400318F97 /* myViewModel.swift */,
+			);
+			path = "dynamic API Client";
+			sourceTree = "<group>";
+		};
+		1EEE4BB5229E899E00318F97 /* homeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BAA7EEE8229D6386002B6539 /* ViewController.swift */,
+				1E84FD58229D6A4E005D4901 /* MyCollectionViewCell.swift */,
+				1E84FD5A229D6E03005D4901 /* viewModel.swift */,
+			);
+			path = homeScreen;
 			sourceTree = "<group>";
 		};
 		3712A9095181D00982D41F1F /* Pods */ = {
@@ -237,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEE4BB3229E856400318F97 /* myViewModel.swift in Sources */,
 				BAA7EEE9229D6386002B6539 /* ViewController.swift in Sources */,
 				BAA7EEE7229D6386002B6539 /* AppDelegate.swift in Sources */,
 				1E84FD5F229D6F1D005D4901 /* networkProtocol.swift in Sources */,
+				1EEE4BB1229E7D2100318F97 /* APIClient.swift in Sources */,
 				1E84FD5D229D6F09005D4901 /* Network.swift in Sources */,
 				1E84FD59229D6A4E005D4901 /* MyCollectionViewCell.swift in Sources */,
 				1E84FD5B229D6E03005D4901 /* viewModel.swift in Sources */,
